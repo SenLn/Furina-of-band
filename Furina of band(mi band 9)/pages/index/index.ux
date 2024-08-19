@@ -11,24 +11,22 @@
     </div>
     <div class="footer column center">
       <div class="list row">
-        
-        <input class="item column center" type="button" value="故事" style="font-size: 15px; color: #ffffff"
-          onclick="routePage5" />
-        <input class="item column center" type="button" value="图鉴" style="font-size: 15px; color: #ffffff"
+        <input class="item column center" type="button" value="故事" style="font-size: 35px; color: #ffffff"
+          onclick="routePage5" />   
+        <input class="item column center" type="button" value="图鉴" style="font-size: 35px; color: #ffffff"
           onclick="routePage4" />
-          <input class="item column center" type="button" value="祈愿" style="font-size: 15px; color: #ffffff"
+        </div>
+      <div class="list3 row">
+        <input class="item column center" type="button" value="祈愿" style="font-size: 35px; color: #ffffff"
           onclick="routePage2" />
-      </div>
-      <div class="list2 row">
-        
-        
-        <input class="item column center" type="button" value="小蛋糕" style="font-size: 15px; color: #ffffff"
+        <input class="item column center" type="button" value="小蛋糕" style="font-size: 35px; color: #ffffff"
           onclick="routePage3" />
-          <input class="item column center" type="button" value="关于" style="font-size: 15px; color: #ffffff"
+        </div>
+      <div class="list6 row">
+        <input class="item column center" type="button" value="关于" style="font-size: 35px; color: #ffffff"
           onclick="routePage1" />
-      </div>
-      <div >
-        <text class="b" onclick="routePage6">玩法/教程</text>
+        <input class="item column center" type="button" value="教程" style="font-size: 35px; color: #ffffff"
+          onclick="routePage6" />
       </div>
     </div>
   </div>
@@ -149,12 +147,12 @@ export default {
 
 <style>
 .download-page {
-  display: flex;
+  display: grid;
   flex-direction: column;
   background-color: #000000;
-  height: 100%;
+  height: 10px;
   position: absolute;
-  width: 100%;
+  width: 75%;
   
 }
 
@@ -163,46 +161,37 @@ text {
 }
 
 .column {
-  /* 竖直 */
   flex-direction: column;
 }
 
 .row {
-  /* 水平 */
   flex-direction: row;
-}
-.info {
-  /* 一块区域 */
-  width: 100%;
-  height: 480px;
 }
 .center {
   align-items: center;
   justify-content: center;
 }
 .header {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 .item {
   /* 单个列表小东西 */
-  width: 78px;
-  height: 33px;
+  width: 45%;
+  height: 60px;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-}
-.body {
-  flex: 1;
+  border-radius: 30px;
 }
 .icon {
-  width: 100%;
-  flex: 50%;
+  margin-top: 50px;
+  height: 75%;
+  margin-bottom: 1em;
 }
 .a {
-  font-size: 36px;
+  font-size: 45px;
 }
 .b {
-  font-size: 20px;
+  font-size: 30px;
   color: #757575;
 }
 .data {
@@ -210,16 +199,22 @@ text {
   color: #ffffff;
 }
 .list {
-  width: 271px;
-  height: 33px;
-  justify-content: space-between;
-  margin-top: 25px;
+  width: 95%;
+  height: 60px;
+  justify-content: space-around;
+  margin-top: 60px;
+  margin-bottom: 5px;
 }
-.list2 {
-  width: 193px;
-  justify-content: space-between;
-  margin-top: 15px;
-  margin-bottom: 20px;
+.list3 {
+  width: 95%;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
-
+.list6 {
+  width: 95%;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
 </style>

@@ -5,28 +5,37 @@
     </div>
       
     <div class="body column center">
-      <div class="info">
+      <div class="center">
         <image class="icon2" src="/common/logo.png" @click="Pagehh"></image>
-        <div class="column">
-          <text class ="b">腕上芙宁娜</text>
-          <text class ="c">版本:1.0.5</text>
         
-        </div>
+    </div>
+    <div class="column">
+      <text class ="b">腕上芙宁娜</text>
+      <text class ="c">版本:1.0.0</text>
+    
     </div>
     </div>
     <div class="footer column">
       <div  style="margin-top: 10px;">
         <text class="d">开发人员:</text>
-        <text class="e">@ Dreamqiu</text>
+        
       </div>
+      <text class="e">@ Dreamqiu</text>
+      <div  style="margin-top: 10px;">
+        <text class="d">适配:</text>
+        
+      </div>
+      <text class="e">@ AzumaChiaki</text>
       <div style="margin-top: 10px;">
         <text class="d">哔哩哔哩:</text>
-        <text class="e">@ Dreamqiucn</text>
+        
       </div>
+      <text class="e">@ Dreamqiucn</text>
       <div style="margin-top: 10px;">
-        <text class="d">鸣     谢:</text>
-        <text class="e">Bandbbs.cn</text>
+        <text class="d">鸣谢:</text>
+        
       </div>
+      <text class="e">Bandbbs.cn</text>
   </div>
   </div>
 </template>
@@ -71,38 +80,38 @@
 }
 .body {
   margin-top: 10px;
-  margin-left: 15px;
+  
 }
 .footer {
   margin-top: 10px;
   margin-left: 15px;
 }
 .icon2 {
-  width: 96px;
-  height: 96px;
+  width: 128px;
+  height: 128px;
   margin-top: 0px;
   margin-left: 0px;
 }
 .a{
-  font-size: 35px;
+  font-size: 45px;
 }
 .b{
-  font-size: 30px;
+  font-size: 35px;
   color: #ffffff;
   margin-left: 30px;
 }
 .c{
-  font-size: 30px;
+  font-size: 35px;
   color: #999999;
   margin-left: 30px;
 }
 .d{
-  font-size: 20px;
+  font-size: 35px;
   color: #999999;
   
 }
 .e{
-  font-size: 20px;
+  font-size: 35px;
   color: #ffffff;
   margin-left: 10px;
 }

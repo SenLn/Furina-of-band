@@ -142,10 +142,10 @@
   margin-left: 0px;
 }
 .a{
-  font-size: 30px;
+  font-size: 40px;
 }
 .b{
-  font-size: 25px;
+  font-size: 30px;
   color: #ffffff;
  
 }
@@ -155,12 +155,12 @@
   margin-left: 30px;
 }
 .d{
-  font-size: 20px;
+  font-size: 30px;
   color: #adadad;
   margin-top: 10px;
 }
 .e{
-  font-size: 20px;
+  font-size: 30px;
   color: #ffffff;
   margin-left: 10px;
 }

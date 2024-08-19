@@ -1,38 +1,43 @@
 <template>
   <div class="page download-page" @swipe="toHomePage">
     <div class="header column center">
-      <text class="a">关于</text>
+      <text class="a">小帽子</text>
     </div>
+    <div class="header column center">
+      <text class="b">介绍</text>
+    </div>
+    
+    <div class="description footer column center">
       
-    <div class="body column center">
-      <div class="info">
-        <image class="icon2" src="/common/logo.png" @click="Pagehh"></image>
-        <div class="column">
-          <text class ="b">腕上芙宁娜</text>
-          <text class ="c">版本:1.0.5</text>
-        
-        </div>
+        <image class="icon" src="/common/icon/mz.png"></image>
+        <text class="d">好看的小帽子，太可爱了。</text>
+        <text class="d">太好看了</text>
+
+     
     </div>
-    </div>
-    <div class="footer column">
-      <div  style="margin-top: 10px;">
-        <text class="d">开发人员:</text>
-        <text class="e">@ Dreamqiu</text>
-      </div>
-      <div style="margin-top: 10px;">
-        <text class="d">哔哩哔哩:</text>
-        <text class="e">@ Dreamqiucn</text>
-      </div>
-      <div style="margin-top: 10px;">
-        <text class="d">鸣     谢:</text>
-        <text class="e">Bandbbs.cn</text>
-      </div>
-  </div>
+    
+    
   </div>
 </template>
 
 <style> 
 
+.description {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 auto; /* Center align */
+    width: fit-content;
+    display: inline-block;
+
+  }
+  .icon {
+  width: 100%;
+  flex: 50%;
+  
+}
 .download-page {
   display: flex;
   flex-direction: column;
@@ -61,7 +66,7 @@
   justify-content: center;
 }
 .header{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .page {                 /* 页面大小 */
   padding: 20px;
@@ -75,21 +80,21 @@
 }
 .footer {
   margin-top: 10px;
-  margin-left: 15px;
+  
 }
 .icon2 {
-  width: 96px;
-  height: 96px;
-  margin-top: 0px;
+  width: 256px;
+  flex: auto;
+  margin-top: 10px;
   margin-left: 0px;
 }
 .a{
-  font-size: 35px;
+  font-size: 30px;
 }
 .b{
-  font-size: 30px;
+  font-size: 25px;
   color: #ffffff;
-  margin-left: 30px;
+ 
 }
 .c{
   font-size: 30px;
@@ -97,9 +102,9 @@
   margin-left: 30px;
 }
 .d{
-  font-size: 20px;
-  color: #999999;
-  
+  font-size: 30px;
+  color: #adadad;
+  margin-top: 10px;
 }
 .e{
   font-size: 20px;
@@ -115,16 +120,10 @@
   import router from '@system.router'
 
   export default {
-    Pagehh() {
-    // 跳转到应用内的某个页面，当前页面无法返回
-    router.replace({
-      uri: "/pages/delete"
-    })
-  },
     toHomePage(eve) {
       if (eve.direction === 'right') {
         router.replace({
-        uri: '/pages/index'
+        uri: '/pages/photo'
         })
     }
     
